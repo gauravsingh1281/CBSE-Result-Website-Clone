@@ -2,27 +2,12 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const _ = require("lodash");
-const mongoose = require("mongoose");
 const { reverse } = require("lodash");
 const app = express();
 
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
-
-mongoose.connect(
-  "mongodb://localhost:27017/studentsDetailsDB",
-  {
-    useNewUrlParser: true,
-  }
-);
-
-const studentsSchema = {
-  student_name: String,
-  school_name: String,
-};
-
-const StudentDetail = mongoose.model("StudentDetail", studentsSchema);
 
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/index.html");
@@ -40,13 +25,6 @@ app.post("/", (req, res) => {
   const Year = req.body.year;
   const studentClass = req.body.studentclass;
   const StudentDob = Day + "/" + Month + "/" + Year;
-
-  const StudentInfo = new StudentDetail({
-    student_name: studentName,
-    school_name: schoolName,
-  });
-
-  StudentInfo.save();
 
   // 1st subject
   const sub1Code = req.body.sub1code;
