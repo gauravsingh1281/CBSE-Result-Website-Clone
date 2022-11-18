@@ -1,0 +1,252 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#infohead {
+  text-align: center;
+  color: #3333cc;
+  font-size: 1.5vw;
+}
+
+#print {
+  margin-left: 2.5vw;
+  font-size: 1.8vw;
+}
+
+#h5 {
+  font-size: 1.7vw;
+}
+
+#table-row {
+  background-color: rgb(230, 230, 250);
+}
+
+#footer {
+  background-color: rgb(194, 219, 248);
+  font-size: 2.5vw;
+  height: 3vw;
+  text-align: center;
+  padding: 2px;
+  border-style: groove;
+}
+
+#table {
+  border: 1.4px solid black;
+  width: 84%;
+  background-color: #ffff;
+  font-size: 1.7vw;
+}
+
+#table-head {
+  background-color: rgb(0, 0, 205);
+  color: white;
+}
+
+#head-img1 {
+  width: 69px;
+  height: 73px;
+  margin: -1px 1px -5px -1px;
+}
+
+#head-img2 {
+  width: 327px;
+  height: 29px;
+  margin-bottom: -9px;
+  margin-left: 5px;
+}
+
+#head-img3 {
+  width: 221px;
+  height: 30px;
+  margin-left: -2px;
+  margin-top: 1px;
+}
+
+#container {
+  background-color: #00cfd2;
+  height: auto;
+  width: 100%;
+}
+
+#exam-session {
+  font-size: 1.9vw;
+  color: #3333cc;
+}
+#subhead {
+  text-align: right;
+  margin-right: 1rem;
+  line-height: 0.4;
+}
+#userdata {
+  display: flex;
+  max-width: 84vw;
+  margin: auto;
+  background-color: #ffff;
+  height: 22vw;
+  font-size: 2vw;
+  line-height: 0.8;
+}
+.leftdata {
+  width: 30%;
+}
+.rightdata {
+  width: 68%;
+}
+
+#tabledata {
+  width: 100%;
+  margin: auto;
+}
+
+a h2 {
+  font-size: 2.5vw;
+  text-align: center;
+  color: #3333cc;
+}
+
+#note {
+  font-size: 2.5vw;
+  text-align: center;
+}
+
+#note-data {
+  font-size: 2vw;
+  text-align: center;
+}
+
+#disclaimer {
+  font-size: 2.5vw;
+  text-align: justify;
+  padding: 6px;
+}
+
+@media (max-width: 424px) {
+  #container {
+    background-color: #00cfd2;
+    height: 58px;
+    width: 100%;
+  }
+
+  #head-img1 {
+    width: 50px;
+    height: 55px;
+    margin: -2px -2px 18px;
+  }
+
+  #head-img2 {
+    width: 220px;
+    height: 23px;
+    margin: 0px 5px 3px;
+  }
+
+  #head-img3 {
+    width: 207px;
+    height: 27px;
+    margin: -16px -2px 0 0;
+  }
+
+  #main {
+    width: 113%;
+  }
+
+  #userdata {
+    display: flex;
+    max-width: 96vw;
+    margin: auto;
+    background-color: #ffff;
+    height: 22vw;
+    font-size: 2vw;
+    line-height: 0.8;
+  }
+}
+
+@media (min-width: 424.5px) {
+  #userdata {
+    display: flex;
+    max-width: 84vw;
+    margin: auto;
+    background-color: #ffff;
+    height: 22vw;
+    font-size: 1.79vw;
+    line-height: 0.8;
+  }
+  #exam-session {
+    font-size: 1.4vw;
+    color: #3333cc;
+  }
+  #h5 {
+    font-size: 1.3vw;
+  }
+  #print {
+    margin-left: 2.5vw;
+    font-size: 1.3vw;
+  }
+  #infohead {
+    text-align: center;
+    color: #3333cc;
+    font-size: 1.2vw;
+  }
+  a h2 {
+    font-size: 1.8vw;
+    text-align: center;
+    color: #3333cc;
+  }
+  #note {
+    font-size: 1.7vw;
+    text-align: center;
+  }
+  #note-data {
+    font-size: 1.7vw;
+    text-align: center;
+  }
+  #disclaimer {
+    font-size: 2vw;
+    text-align: justify;
+    padding: 6px;
+  }
+  #footer {
+    background-color: rgb(194, 219, 248);
+    font-size: 1.8vw;
+    height: 2vw;
+    text-align: center;
+    padding: 2px;
+    border-style: groove;
+  }
+  #table {
+    border: 1.4px solid black;
+    width: 84%;
+    background-color: #ffff;
+    font-size: 1.5vw;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 424.5px) {
+  #container {
+    background-color: #00cfd2;
+    height: 58px;
+    width: 100%;
+  }
+
+  #head-img1 {
+    width: 50px;
+    height: 55px;
+    margin: -2px -2px 18px;
+  }
+
+  #head-img2 {
+    width: 220px;
+    height: 23px;
+    margin: 0px 5px 3px;
+  }
+
+  #head-img3 {
+    width: 207px;
+    height: 27px;
+    margin: -16px -2px 0 0;
+  }
+}
+
+.leftdata p {
+  font-weight: bold;
+}

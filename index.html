@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Result Generator</title>
+        <link rel="icon" type="image/x-icon" href="image/cbseJeeMains.png">
+        <link rel="stylesheet" href="css/formstyles.css">
+</head>
+
+<body>
+
+        <h1>Result Generator</h1>
+        <p>Please fill out this form to generate your result</p>
+        <form action="/" method="post">
+
+                <fieldset>
+                        <label>Session Year : <input type="text" name="sessionyear" placeholder="Session Year" required
+                                        autocomplete="off" /></label>
+                        <label>Board Roll No. :<input type="text" name="rollno" placeholder="Board Roll No." required
+                                        autocomplete="off" /></label>
+                        <label>Candidate's Name : <input type="text" name="studentname" placeholder="Candidate's Name"
+                                        required autocomplete="off" /></label>
+                        <label>Father's Name : <input type="text" name="fathername" placeholder="Father's Name" required
+                                        autocomplete="off" /></label>
+                        <label>Mother's Name : <input type="text" name="mothername" placeholder="Mother's Name" required
+                                        autocomplete="off" /></label>
+                        <label>Date of Birth : <input type="text" name="day" class="dob" placeholder="DD" required
+                                        autocomplete="off" /><input type="text" name="month" class="dob"
+                                        placeholder="MM" required autocomplete="off" /><input type="text" name="year"
+                                        class="dob" placeholder="YYYY" required autocomplete="off" /></label>
+                        <label>School's Name : <input type="text" name="schoolname" placeholder="School's Name" required
+                                        autocomplete="off" /></label>
+                </fieldset>
+                <fieldset>
+                        <h3 style="text-align: center;">Select Class</h3>
+                        <label><input type="radio" name="studentclass" class="inline" value="Class X" required /> Class
+                                X</label>
+                        <label><input type="radio" name="studentclass" class="inline" value="Class XII" required />
+                                Class
+                                XII</label>
+                </fieldset>
+
+                <!-- 1st Subject -->
+
+                <fieldset>
+                        <h3 style="text-align: center;">1<sup>st</sup> Subject</h3>
+                        <label>Code :<input type="text" name="sub1code" placeholder="Enter subject code" required
+                                        autocomplete="off" /></label>
+                        <label>Name :<input type="text" name="sub1name" placeholder="Enter subject name" required
+                                        autocomplete="off" /></label>
+                        <label>Theory Marks :<input type="text" name="sub1thmarks"
+                                        placeholder="Enter subject theory marks" required autocomplete="off" /></label>
+                        <label>Practical Marks :<input type="text" name="sub1prmarks"
+                                        placeholder="Enter subject practical marks" required
+                                        autocomplete="off" /></label>
+                </fieldset>
+
+                <!-- 2nd Subject -->
+
+                <fieldset>
+                        <h3 style="text-align: center;">2<sup>nd</sup> Subject</h3>
+                        <label>Code :<input type="text" name="sub2code" placeholder="Enter subject code" required
+                                        autocomplete="off" /></label>
+                        <label>Name :<input type="text" name="sub2name" placeholder="Enter subject name" required
+                                        autocomplete="off" /></label>
+                        <label>Theory Marks :<input type="text" name="sub2thmarks"
+                                        placeholder="Enter subject theory marks" required autocomplete="off" /></label>
+                        <label>Practical Marks :<input type="text" name="sub2prmarks"
+                                        placeholder="Enter subject practical marks" required
+                                        autocomplete="off" /></label>
+                </fieldset>
+
+                <!-- 3rd Subject -->
+
+                <fieldset>
+                        <h3 style="text-align: center;">3<sup>rd</sup> Subject</h3>
+                        <label>Code :<input type="text" name="sub3code" placeholder="Enter subject code" required
+                                        autocomplete="off" /></label>
+                        <label>Name :<input type="text" name="sub3name" placeholder="Enter subject name" required
+                                        autocomplete="off" /></label>
+                        <label>Theory Marks :<input type="text" name="sub3thmarks"
+                                        placeholder="Enter subject theory marks" required autocomplete="off" /></label>
+                        <label>Practical Marks :<input type="text" name="sub3prmarks"
+                                        placeholder="Enter subject practical marks" required
+                                        autocomplete="off" /></label>
+                </fieldset>
+
+                <!-- 4th Subject -->
+
+                <fieldset>
+                        <h3 style="text-align: center;">4<sup>th</sup> Subject</h3>
+                        <label>Code :<input type="text" name="sub4code" placeholder="Enter subject code" required
+                                        autocomplete="off" /></label>
+                        <label>Name :<input type="text" name="sub4name" placeholder="Enter subject name" required
+                                        autocomplete="off" /></label>
+                        <label>Theory Marks :<input type="text" name="sub4thmarks"
+                                        placeholder="Enter subject theory marks" required autocomplete="off" /></label>
+                        <label>Practical Marks :<input type="text" name="sub4prmarks"
+                                        placeholder="Enter subject practical marks" required
+                                        autocomplete="off" /></label>
+                </fieldset>
+
+                <!-- 5th Subject -->
+
+                <fieldset>
+                        <h3 style="text-align: center;">5<sup>th</sup> Subject</h3>
+                        <label>Code :<input type="text" name="sub5code" placeholder="Enter subject code" required
+                                        autocomplete="off" /></label>
+                        <label>Name :<input type="text" name="sub5name" placeholder="Enter subject name" required
+                                        autocomplete="off" /></label>
+                        <label>Theory Marks :<input type="text" name="sub5thmarks"
+                                        placeholder="Enter subject theory marks" required autocomplete="off" /></label>
+                        <label>Practical Marks :<input type="text" name="sub5prmarks"
+                                        placeholder="Enter subject practical marks" required
+                                        autocomplete="off" /></label>
+                </fieldset>
+
+                <input type="submit" value="Generate Result" onclick="playSound()" />
+        </form>
+        <footer style="padding: 3%;">
+                <p>&copy; <span id="yr"></span> || All Rights Reserved || Gaurav Singh</p>
+        </footer>
+        <script src="script/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Generator</title>
+    <link rel="icon" type="image/x-icon" href="image/cbseJeeMains.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- header section -->
+    <div id="main">
+        <hearder>
+            <div id="container">
+                <table>
+                    <tr>
+                        <td><a href="https://agile-hollows-60021.herokuapp.com/"> <img id="head-img1"
+                                    src="image/cbseJeeMains.png"></a></td>
+                        <td><img id="head-img3" src="image/cbsehindi-new.png"> <br><img id="head-img2"
+                                src="image/cbseenglish-new.png"> </td>
+                        <td></td>
+                    </tr>
+                    </tr>
+                </table>
+            </div>
+        </hearder>
+
+        <!-- subheading section -->
+
+        <section id="subhead">
+            <h5 id="exam-session">
+                Examination Results
+                <%=SESSIONYEAR%>
+
+            </h5>
+
+            <h5 id="h5">Brought to you by National Informatics Centre</h5>
+        </section>
+        <div id="print">
+            <a href="#">Print this Page</a>
+        </div>
+        <div id="infohead">
+            <h2>Examination Results</h2>
+            <h2>Senior School Certificate Examination (Class XII) Results
+
+                <%=SESSIONYEAR%>
+            </h2>
+        </div>
+        <br>
+
+        <div id="userdata">
+
+            <div class="leftdata">
+                <article>
+                    <p>Roll No.</p>
+                </article>
+                <article>
+                    <p>Candidate's Name</p>
+                </article>
+                <article>
+                    <p>Father's Name</p>
+                </article>
+                <article>
+                    <p>Mother's Name</p>
+                </article>
+                <article>
+                    <p>School's Name</p>
+                </article>
+            </div>
+
+            <div class="rightdata">
+                <article>
+                    <p>
+                        <%=ROLLNO%>
+                    </p>
+
+                </article>
+                <article>
+
+                    <p style="font-weight: bold;">
+                        <%=STUDENTNAME%>
+                    </p>
+                </article>
+                <article>
+                    <p>
+                        <%=FATHERNAME%>
+                    </p>
+                </article>
+                <article>
+                    <p>
+                        <%=MOTHERNAME%>
+                    </p>
+                </article>
+
+                <article>
+                    <p>
+                        <%=SCHOOLNAME%>
+                    </p>
+                </article>
+
+            </div>
+        </div>
+        <br>
+        <div id="tabledata">
+            <table id="table" align="center" border="1" Cellspacing="0" cellpadding="2">
+
+                <tr id="table-head">
+                    <th style="text-align: center;">SUB CODE</th>
+                    <Th style="text-align: left;">SUB NAME</Th>
+                    <Th style="text-align: left;">THEORY</Th>
+                    <Th style="text-align: left;">PRACTICAL</Th>
+                    <Th style="text-align: left;">MARKS</Th>
+                    <Th style="text-align: center;">POSITIONAL GRADE</Th>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">
+                        <%=SUB1CODE%>
+                    </td>
+                    <td>
+                        <%=SUB1NAME%>
+                    </td>
+                    <TD>
+                        0<%=SUB1THMARKS%>
+                    </TD>
+                    <Td>
+                        0<%=SUB1PRMARKS%>
+                    </TD>
+                    <TD>
+                        0<%=SUB1TOTALMARKS%>
+                    </TD>
+                    <TD style="text-align: center;">B1</TD>
+                </tr>
+                <TR id="table-row">
+                    <TD style="text-align: center;">
+                        <%=SUB2CODE%>
+                    </TD>
+                    <TD>
+                        <%=SUB2NAME%>
+                    </TD>
+                    <TD>
+                        0<%=SUB2THMARKS%>
+                    </TD>
+                    <TD>
+                        0<%=SUB2PRMARKS%>
+                    </TD>
+                    <TD>
+                        0<%=SUB2TOTALMARKS%>
+                    </TD>
+                    <TD style="text-align: center;">C1</TD>
+                </TR>
+                <TR>
+                    <TD style="text-align: center;">
+                        <%=SUB3CODE%>
+                    </TD>
+                    <TD>
+                        <%=SUB3NAME%>
+                    </TD>
+                    <TD>
+                        0<%=SUB3THMARKS%>
+                    </TD>
+                    <TD>
+                        0<%=SUB3PRMARKS%>
+                    </TD>
+                    <TD>
+                        0<%=SUB3TOTALMARKS%>
+                    </TD>
+                    <TD style="text-align: center;">B2</TD>
+                </TR>
+                <TR id="table-row">
+                    <TD style="text-align: center;">
+                        <%=SUB4CODE%>
+                    </TD>
+                    <TD>
+                        <%=SUB4NAME%>
+                    </TD>
+                    <TD>
+                        0<%=SUB4THMARKS%>
+                    </TD>
+                    <TD>
+                        0<%=SUB4PRMARKS%>
+                    </TD>
+                    <TD>
+                        0<%=SUB4TOTALMARKS%>
+                    </TD>
+                    <TD style="text-align: center;">A2</TD>
+                </TR>
+                <TR>
+                    <TD style="text-align: center;">
+                        <%=SUB5CODE%>
+                    </TD>
+                    <TD>
+                        <%=SUB5NAME%>
+                    </TD>
+                    <TD>
+                        0<%=SUB5THMARKS%>
+                    </TD>
+                    <TD>
+                        0<%=SUB5PRMARKS%>
+                    </TD>
+                    <TD>
+                        0<%=SUB5TOTALMARKS%>&nbsp;P
+                    </TD>
+                    <TD style="text-align: center;">B2</TD>
+                </TR>
+                <TR>
+                    <TD style="text-align: center;">
+                        500
+                    </TD>
+                    <TD>WORK EXPERIENCE</TD>
+                    <TD></TD>
+                    <TD></TD>
+                    <TD>&ndash;</TD>
+                    <TD style="text-align: center;">A1</TD>
+                </TR>
+                <TR>
+                    <TD style="text-align: center;">
+                        502
+                    </TD>
+                    <TD>HEALTH & PHYSICAL EDUCATION</TD>
+                    <TD></TD>
+                    <TD></TD>
+                    <TD>&ndash;</TD>
+                    <TD style="text-align: center;">A1</TD>
+                </TR>
+                <TR id="table-row">
+                    <TD style="text-align: center;">
+                        503
+                    </TD>
+                    <TD>GENERAL STUDIES</TD>
+                    <TD></TD>
+                    <TD></TD>
+                    <TD>&ndash;</TD>
+                    <TD style="text-align: center;">A1</TD>
+                </TR>
+                <TR id="table-head">
+                    <TD></TD>
+                    <TD colspan="5">Result&nbsp;:&nbsp;PASS</TD>
+                </TR>
+
+            </table>
+        </div>
+        <a href="https://agile-hollows-60021.herokuapp.com/">
+            <h2>Check Another Result&nbsp;:</h2>
+        </a>
+
+        <h4 id="note">Note&nbsp;:&nbsp;Abbreviations used against Result :</h4>
+        <p id="note-data">N.E- Not Eligible, R.W.- Result Withheld, R.L.-Result Later, ABST- Absent, COMP-
+            Compartment,
+            UFM-Unfairmeans, XXXX- Improvement, SJD- Subjadice, N.R.- Not Registered</p>
+        <br>
+        <p id="disclaimer"><b>Disclaimer&nbsp;:</b>&nbsp;Neither NIC Nor CBSE is responsible for any inadvertent error
+            that may
+            have
+            crept in the results being published on NET. The results published on net are for Immediate information to
+            the examinees. These cannot be treated as original mark sheets. Original mark sheets have been issued by the
+            Board separately.</p>
+        <footer>
+            <h3 id="footer">Designed, Developed and Hosted by National Informatics Centre
+            </h3>
+        </footer>
+
+        <!-- <p>&copy; 2022|| All Rights Reserved || Gaurav Singh</p> -->
+
+    </div>
+    
+</body>
+
+</html>
