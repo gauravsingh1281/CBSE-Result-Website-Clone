@@ -13,6 +13,6 @@
 <li>Embedded JavaScript (EJS).</li>
 </ul>
 
-Project Link - https://fathomless-lowlands-51637.herokuapp.com/
+Project Link - https://cbse-result-website-clone-production.up.railway.app/
 
 Go and check it out by generating your own result and show some love ❤.
