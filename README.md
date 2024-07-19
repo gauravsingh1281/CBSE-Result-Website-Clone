@@ -13,6 +13,6 @@
 <li>Embedded JavaScript (EJS).</li>
 </ul>
 
-Project Link - https://cbse-result-website-clone-production.up.railway.app/
+Project Link - https://cbse-result-website-clone.onrender.com/
 
 Go and check it out by generating your own result and show some love ❤.
